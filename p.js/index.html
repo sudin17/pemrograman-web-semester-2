@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar js</title>
+</head>
+<body id="tema">
+    <button onclick="provinsi1()">Bali</button>
+    <button onclick="provinsi2()">Jawa Tengah</button>
+    <button onclick="provinsi3()">Papua Barat</button>
+    <button onclick="tema1()">Terang</button>
+    <button onclick="tema2()">Gelap</button>
+
+    <div id="konten">
+         
+    </div>
+
+    <script type="text/javascript">
+        function tema1() {
+            document.getElementById("tema").style.background = "white";
+            document.getElementById("tema").style.color = "black";
+            document.getElementById("tema").style.transition = "all 2s";
+        }
+        function tema2() {
+            document.getElementById("tema").style.background = "black";
+            document.getElementById("tema").style.color = "white";
+            document.getElementById("tema").style.transition = "all 2s";
+            document.get
+        }
+        function provinsi1() {
+            document.getElementById("konten").innerHTML = "Denpasar<hr>Gianyar<hr>Tabanan<hr>karangasem<hr>singaraja";
+        }
+        function provinsi2() {
+            document.getElementById("konten").innerHTML = "Banjarnegare<hr>Banyumas<hr>Batang<hr>Boyolali<hr>Karanganyar";
+        }
+        function provinsi3() {
+            document.getElementById("konten").innerHTML = "Fakfak<hr>Manokwari<hr>Maybrat<hr>Raja Ampat<hr>Sorong";
+        }
+        
+    </script>
+</body>
+</html>
